@@ -36,9 +36,10 @@
 ---
 
 ## 分工
-*赵继晨*：负责画Figma交互原型、搭前端基础框架，以及最后统筹所有的报告和代码整合。
 
-***臧子涵***：负责用MediaPipe开源库跑通视频骨骼点提取，并计算出投篮角度等核心数据。
+***臧子涵***：负责用MediaPipe开源库跑通视频骨骼点提取，并计算出投篮角度等核心数据，以及最后统筹所有的报告和代码整合。
+
+*赵继晨*：负责搭前端基础框架。
 
 *杜星延*：负责用ECharts画出用户与明星的投篮雷达图/对比曲线，并写好弹窗建议的匹配逻辑。
 
@@ -87,6 +88,6 @@ HCI-Basketball-Pose-Analyzer/
 
 ## 🛠 技术栈
 
-*   **核心算法**：Python, OpenCV, MediaPipe
-*   **前端展示**：React, HTML5, CSS3, JavaScript, ECharts
+*   **核心算法**：Python(uv构建管理), fastapi 暴露接口, OpenCV, MediaPipe(库调用)
+*   **前端展示**：React(pnpm管理前端)搭建框架, ECharts展示
   
