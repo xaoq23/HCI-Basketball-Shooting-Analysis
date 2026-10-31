@@ -45,3 +45,48 @@
 *万毅*：负责实现前端视频的上传、播放、暂停、逐帧控制，以及和图表模块的UI对接。
 
 *熊敏*：负责写用户调研报告和交互设计说明书，测试大家的功能找Bug，并制作最终的答辩PPT和演示视频。
+
+## 项目结构
+
+```
+HCI-Basketball-Pose-Analyzer/
+│
+├── README.md                 # 项目说明书（项目简介、分工、如何运行）
+├── .gitignore                # 忽略不需要上传的文件（如临时文件、大视频等）
+│
+├── docs/                     # 文档与报告模块
+│   ├── 需求分析.md            
+│   ├── 交互设计说明书.md       
+│   ├── 答辩PPT.pptx
+│   └── 交互原型图/            
+│
+├── frontend/                 # 前端交互与可视化模块
+│   ├── index.html            # 主页面
+│   ├── css/
+│   │   └── style.css         # 全局样式
+│   ├── js/
+│   │   ├── main.js           # 页面交互逻辑
+│   │   ├── video-player.js   # 视频上传、播放、进度条控制、截取关键帧逻辑
+│   │   └── chart-echarts.js  # ECharts 雷达图/曲线图渲染逻辑
+│   └── assets/               # 静态资源
+│
+├── backend/                  # 算法与核心逻辑模块
+│   ├── main.py               # 服务端入口（接口封装）
+│   ├── pose_estimation.py    # MediaPipe 提取骨骼点坐标
+│   ├── angle_calculator.py   # 计算关节角度（向量夹角）
+│   └── utils.py              # 辅助工具
+│
+├── data/                     # 数据与模板模块
+│   ├── standard_models/      # 球星标准数据
+│   │   ├── curry.json        
+│   │   └── james.json        
+│   └── user_uploads/         # 用户上传的临时文件（加进.gitignore）
+│
+└── test_images/              # 测试素材
+```
+
+## 🛠 技术栈
+
+*   **核心算法**：Python, OpenCV, MediaPipe
+*   **前端展示**：React, HTML5, CSS3, JavaScript, ECharts
+  
