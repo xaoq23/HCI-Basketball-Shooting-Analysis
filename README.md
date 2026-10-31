@@ -87,6 +87,6 @@ HCI-Basketball-Pose-Analyzer/
 
 ## 🛠 技术栈
 
-*   **核心算法**：Python, OpenCV, MediaPipe
-*   **前端展示**：React, HTML5, CSS3, JavaScript, ECharts
+*   **核心算法**：Python(uv构建管理), fastapi 暴露接口, OpenCV, MediaPipe(库调用)
+*   **前端展示**：React(pnpm管理前端)搭建框架, ECharts展示
   
